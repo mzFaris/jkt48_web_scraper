@@ -3,10 +3,20 @@ package main
 import (
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/fatih/camelcase"
 	"github.com/gocolly/colly"
 )
+
+type Member struct {
+	name      string
+	birthday  time.Time
+	bloodType string
+	horoscope string
+	height    int
+	nickname  string
+}
 
 func main() {
 	fmt.Println(getMemberName())
